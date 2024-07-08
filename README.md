@@ -7,72 +7,38 @@ This set of nodes will apply various activation functions directly to latent ten
 The following activation functions are included in this pack:
 
 - **ReLU:**  
-  \[
-  \text{ReLU}(x) = \max(0, x)
-  \]
+  <p align="center"><code>ReLU(x) = max(0, x)</code></p>
 
 - **Sigmoid:**  
-  \[
-  \text{Sigmoid}(x) = \frac{1}{1 + e^{-x}}
-  \]
+  <p align="center"><code>Sigmoid(x) = 1 / (1 + e<sup>-x</sup>)</code></p>
 
 - **Tanh:**  
-  \[
-  \text{Tanh}(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}
-  \]
+  <p align="center"><code>Tanh(x) = (e<sup>x</sup> - e<sup>-x</sup>) / (e<sup>x</sup> + e<sup>-x</sup>)</code></p>
 
 - **Leaky ReLU:**  
-  \[
-  \text{Leaky ReLU}(x) = \max(0.01x, x)
-  \]
+  <p align="center"><code>Leaky ReLU(x) = max(0.01x, x)</code></p>
 
 - **ELU:**  
-  \[
-  \text{ELU}(x) = 
-  \begin{cases} 
-  x & \text{if } x > 0 \\
-  \alpha (e^x - 1) & \text{if } x \leq 0 
-  \end{cases}
-  \]
+  <p align="center"><code>ELU(x) = x</code> if <code>x > 0</code>, else <code>ELU(x) = α (e<sup>x</sup> - 1)</code></p>
 
 - **Softplus:**  
-  \[
-  \text{Softplus}(x) = \log(1 + e^x)
-  \]
+  <p align="center"><code>Softplus(x) = log(1 + e<sup>x</sup>)</code></p>
 
 - **Swish:**  
-  \[
-  \text{Swish}(x) = x \cdot \text{Sigmoid}(x)
-  \]
+  <p align="center"><code>Swish(x) = x * Sigmoid(x)</code></p>
 
 - **GELU:**  
-  \[
-  \text{GELU}(x) = 0.5x(1 + \text{tanh}(\sqrt{\frac{2}{\pi}} (x + 0.044715x^3)))
-  \]
+  <p align="center"><code>GELU(x) = 0.5x(1 + tanh(√(2/π) (x + 0.044715x<sup>3</sup>)))</code></p>
 
 - **SELU:**  
-  \[
-  \text{SELU}(x) = \lambda 
-  \begin{cases} 
-  x & \text{if } x > 0 \\
-  \alpha (e^x - 1) & \text{if } x \leq 0 
-  \end{cases}
-  \]
-  where \(\lambda \approx 1.0507\) and \(\alpha \approx 1.67326\).
+  <p align="center"><code>SELU(x) = λ x</code> if <code>x > 0</code>, else <code>SELU(x) = λ α (e<sup>x</sup> - 1)</code></p>
+  <p align="center">where <code>λ ≈ 1.0507</code> and <code>α ≈ 1.67326</code>.</p>
 
 - **Mish:**  
-  \[
-  \text{Mish}(x) = x \cdot \text{tanh}(\text{Softplus}(x))
-  \]
+  <p align="center"><code>Mish(x) = x * tanh(Softplus(x))</code></p>
 
 - **PReLU:**  
-  \[
-  \text{PReLU}(x) = 
-  \begin{cases} 
-  x & \text{if } x > 0 \\
-  ax & \text{if } x \leq 0 
-  \end{cases}
-  \]
+  <p align="center"><code>PReLU(x) = x</code> if <code>x > 0</code>, else <code>PReLU(x) = ax</code></p>
 
 ## Installation
 
@@ -93,7 +59,7 @@ The following activation functions are included in this pack:
 
 ## Contributing
 
-Contributions are welcome! Feel free to submit issues, fork the repository and create pull requests.
+Contributions are welcome! Feel free to submit issues, fork the repository, and create pull requests.
 
 ## License
 
