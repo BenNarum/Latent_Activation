@@ -1,8 +1,8 @@
-## Latent Activation
+# Latent Activation
 
 This set of nodes will apply various activation functions directly to latent tensors. Have fun and experiment with different non-linear transformations of the latent space!
 
-## Activation Functions:
+## Activation Functions
 
 The following activation functions are included in this pack:
 
@@ -74,11 +74,11 @@ The following activation functions are included in this pack:
   \end{cases}
   \]
 
-## Installation:
+## Installation
 
 1. Clone or download this repository to your `ComfyUI/custom_nodes` directory.
 
-## Usage:
+## Usage
 
 1. In your ComfyUI workflow, add one of the activation nodes (e.g., `ReLU Activation`) after a node that outputs a latent tensor (such as `KSampler` or `LoadLatent`).
 2. Connect the output of the activation node to a `VAEDecode` node to generate an image from the transformed latent.
@@ -91,10 +91,10 @@ The following activation functions are included in this pack:
     - **Blend Amount:**  Controls the blending ratio during compositing (0.0 to 1.0).
     - **Additional Parameters:** Certain activation functions have additional parameters (e.g., `alpha` for ELU, `beta` and `threshold` for Softplus, `negative_slope` for Leaky ReLU, etc.).
 
-## Contributing:
+## Contributing
 
-Contributions, Google AI studio/ChatGPT 
+Contributions are welcome! Feel free to submit issues, fork the repository and create pull requests.
 
-## License: 
+## License
 
 This project is licensed under the [MIT License](LICENSE).
